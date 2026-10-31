@@ -3,271 +3,455 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>চা-বিলাসী | Sreemangal Premium Tea</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #2c5530; /* Tea Green */
-            --secondary-color: #d4a373; /* Earthy Brown */
-            --bg-light: #fefae0;
-            --text-dark: #333;
-        }
+    <title>চা-বিলাসী | শ্রীমঙ্গলের প্রিমিয়াম কোয়ালিটি চা</title>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+    <!-- SEO -->
+    <meta name="description" content="চা-বিলাসী — শ্রীমঙ্গলের টি-এস্টেট থেকে সরাসরি সংগৃহীত প্রিমিয়াম কোয়ালিটির খাঁটি চা। প্রিমিয়াম ব্ল্যাক টি, অর্গানিক গ্রিন টি ও স্পেশাল মাসালা চাই; WhatsApp-এ সহজ অর্ডার, সারাদেশে ডেলিভারি।">
+    <meta name="keywords" content="চা, শ্রীমঙ্গলের চা, প্রিমিয়াম চা, ব্ল্যাক টি, গ্রিন টি, মাসালা চাই, বাংলাদেশ টি, Sreemangal tea, Cha Bilashi">
+    <meta name="author" content="চা-বিলাসী">
+    <meta name="theme-color" content="#12291c">
+    <link rel="canonical" href="https://sikdershakib.github.io/beta-tea/">
 
-        body {
-            background-color: #fafafa;
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="চা-বিলাসী">
+    <meta property="og:title" content="চা-বিলাসী | শ্রীমঙ্গলের প্রিমিয়াম কোয়ালিটি চা">
+    <meta property="og:description" content="পাহাড়ের সকালের শিশির থেকে আপনার কাপ পর্যন্ত — শ্রীমঙ্গলের এস্টেট থেকে সরাসরি সংগৃহীত খাঁটি চা।">
+    <meta property="og:url" content="https://sikdershakib.github.io/beta-tea/">
+    <meta property="og:image" content="https://sikdershakib.github.io/beta-tea/assets/img/hero.jpg">
+    <meta property="og:locale" content="bn_BD">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="চা-বিলাসী | শ্রীমঙ্গলের প্রিমিয়াম কোয়ালিটি চা">
+    <meta name="twitter:description" content="শ্রীমঙ্গলের এস্টেট থেকে সরাসরি আপনার কাপে — প্রিমিয়াম কোয়ালিটির খাঁটি চা।">
+    <meta name="twitter:image" content="https://sikdershakib.github.io/beta-tea/assets/img/hero.jpg">
 
-        /* Header Navigation */
-        header {
-            background-color: white;
-            padding: 1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+    <!-- Icons & fonts -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preload" as="image" href="assets/img/hero.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        .logo {
-            font-size: 2rem;
-            font-weight: bold;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .nav-links a {
-            margin-left: 20px;
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary-color);
-        }
-
-        /* Hero Section */
-        .hero {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Picsart_26-05-13_00-03-26-632.jpg (1).jpg');
-            background-size: cover;
-            background-position: center;
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 0 20px;
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-
-        .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 30px;
-            color: #e9ecef;
-        }
-
-        .cta-button {
-            background-color: #25D366; /* WhatsApp Green */
-            color: white;
-            padding: 15px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-            transition: transform 0.3s, background-color 0.3s;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .cta-button:hover {
-            background-color: #128C7E;
-            transform: translateY(-3px);
-        }
-
-        /* Products Section */
-        .products {
-            padding: 5rem 5%;
-            text-align: center;
-        }
-
-        .products h2 {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 3rem;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-
-        .product-card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
-        }
-
-        .product-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .product-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            background-color: var(--bg-light); /* Placeholder bg */
-        }
-
-        .product-card h3 {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-
-        .product-card .price {
-            color: var(--secondary-color);
-            font-weight: bold;
-            font-size: 1.1rem;
-            margin-bottom: 15px;
-        }
-
-        .order-btn {
-            display: block;
-            background-color: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-
-        .order-btn:hover {
-            background-color: #1e3b21;
-        }
-
-        /* Floating WhatsApp Button */
-        .float-wa {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 40px;
-            right: 40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-            z-index: 1000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            transition: transform 0.3s;
-        }
-
-        .float-wa:hover {
-            transform: scale(1.1);
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 2rem 5%;
-            margin-top: 2rem;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-            .hero p { font-size: 1.2rem; }
-            .nav-links { display: none; } /* Simplified for mobile */
-        }
-    </style>
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "চা-বিলাসী (Cha-Bilashi)",
+      "description": "শ্রীমঙ্গলের টি-এস্টেট থেকে সরাসরি সংগৃহীত প্রিমিয়াম কোয়ালিটির খাঁটি চা।",
+      "url": "https://sikdershakib.github.io/beta-tea/",
+      "image": "https://sikdershakib.github.io/beta-tea/assets/img/hero.jpg",
+      "telephone": "+8801836476892",
+      "priceRange": "৳৩৫০ - ৳৪৫০",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "শ্রীমঙ্গল",
+        "addressRegion": "মৌলভীবাজার, সিলেট",
+        "addressCountry": "BD"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "সিগনেচার টি কালেকশন",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "price": "350",
+            "priceCurrency": "BDT",
+            "itemOffered": { "@type": "Product", "name": "প্রিমিয়াম ব্ল্যাক টি (Premium Black Tea)" }
+          },
+          {
+            "@type": "Offer",
+            "price": "450",
+            "priceCurrency": "BDT",
+            "itemOffered": { "@type": "Product", "name": "অর্গানিক গ্রিন টি (Organic Green Tea)" }
+          },
+          {
+            "@type": "Offer",
+            "price": "400",
+            "priceCurrency": "BDT",
+            "itemOffered": { "@type": "Product", "name": "স্পেশাল মাসালা চাই (Special Masala Chai)" }
+          }
+        ]
+      }
+    }
+    </script>
 </head>
 <body>
+    <a class="skip-link" href="#main">মূল কনটেন্টে যান</a>
 
-    <header>
-        <a href="#" class="logo">চা-বিলাসী</a>
-        <nav class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#products">Our Tea</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <!-- Announcement bar -->
+    <div class="topbar">
+        <div class="container">
+            <span class="topbar-left"><i class="fa-solid fa-truck-fast"></i>সারাদেশে কুরিয়ার ডেলিভারি — অর্ডার করুন WhatsApp-এ</span>
+            <span><i class="fa-solid fa-phone"></i>হটলাইন: <a href="tel:+8801836476892">01836-476892</a></span>
+        </div>
+    </div>
 
-    <section id="home" class="hero">
-        <h1>চা-বিলাসী</h1>
-        <p>শ্রীমঙ্গলের প্রিমিয়াম কোয়ালিটি চা</p>
-        <!-- Replaced with the number from your image, formatted for WhatsApp -->
-        <a href="https://wa.me/8801521739472?text=হ্যালো,%20আমি%20চা-বিলাসী%20থেকে%20চা%20অর্ডার%20করতে%20চাই" target="_blank" class="cta-button">
-            <i class="fab fa-whatsapp"></i> বিস্তারিত জানতে WhatsApp করুন
-        </a>
-    </section>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#home" class="brand" aria-label="চা-বিলাসী — হোম">
+                <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                    <rect width="64" height="64" rx="15" fill="#12291c"/>
+                    <circle cx="32" cy="32" r="23" fill="none" stroke="#c9a227" stroke-width="1.6" opacity="0.55"/>
+                    <path d="M32 14c7.6 6.4 11.6 13.2 11.6 20.2C43.6 42.6 38.4 48 32 48s-11.6-5.4-11.6-13.8C20.4 27.2 24.4 20.4 32 14z" fill="#c9a227"/>
+                    <path d="M32 18v26" stroke="#12291c" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M32 26c2.6-1.8 5-2.4 7.4-2.2M32 33c-2.6-1.8-5-2.4-7.4-2.2M32 40c2.6-1.8 5-2.4 7.4-2.2" stroke="#12291c" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+                </svg>
+                <span class="brand-text">
+                    <span class="brand-name">চা-বিলাসী</span>
+                    <span class="brand-tag">Sreemangal Tea</span>
+                </span>
+            </a>
 
-    <section id="products" class="products">
-        <h2>আমাদের প্রিমিয়াম চা সমূহ</h2>
-        <div class="product-grid">
-            <!-- Product 1 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&q=80&w=400" alt="Black Tea">
-                <h3>Premium Black Tea</h3>
-                <p class="price">৳ 350 / 500g</p>
-                <a href="https://wa.me/8801521739472?text=আমি%20Premium%20Black%20Tea%20অর্ডার%20করতে%20চাই" target="_blank" class="order-btn">Order via WhatsApp</a>
-            </div>
-            <!-- Product 2 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?auto=format&fit=crop&q=80&w=400" alt="Green Tea">
-                <h3>Organic Green Tea</h3>
-                <p class="price">৳ 450 / 500g</p>
-                <a href="https://wa.me/8801521739472?text=আমি%20Organic%20Green%20Tea%20অর্ডার%20করতে%20চাই" target="_blank" class="order-btn">Order via WhatsApp</a>
-            </div>
-            <!-- Product 3 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1576092762791-dd9e2220abd4?auto=format&fit=crop&q=80&w=400" alt="Masala Tea">
-                <h3>Special Masala Chai</h3>
-                <p class="price">৳ 400 / 500g</p>
-                <a href="https://wa.me/8801521739472?text=আমি%20Special%20Masala%20Chai%20অর্ডার%20করতে%20চাই" target="_blank" class="order-btn">Order via WhatsApp</a>
+            <nav class="main-nav" id="main-nav" aria-label="প্রধান নেভিগেশন">
+                <ul>
+                    <li><a class="nav-link" href="#home">হোম</a></li>
+                    <li><a class="nav-link" href="#products">আমাদের চা</a></li>
+                    <li><a class="nav-link" href="#about">আমাদের গল্প</a></li>
+                    <li><a class="nav-link" href="#guide">ব্রুয়িং গাইড</a></li>
+                    <li><a class="nav-link" href="#faq">জিজ্ঞাসা</a></li>
+                    <li><a class="nav-link" href="#contact">যোগাযোগ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <a class="btn btn-wa" href="https://wa.me/8801521739472?text=%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%8B,%20%E0%A6%86%E0%A6%AE%E0%A6%BF%20%E0%A6%9A%E0%A6%BE-%E0%A6%AC%E0%A6%BF%E0%A6%B2%E0%A6%BE%E0%A6%B8%E0%A7%80%20%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87%20%E0%A6%9A%E0%A6%BE%20%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%A1%E0%A6%BE%E0%A6%B0%20%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> অর্ডার করুন
+                </a>
+                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="মেনু খুলুন">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
             </div>
         </div>
-    </section>
+    </header>
 
-    <footer id="contact">
-        <h2>চা-বিলাসী</h2>
-        <p>শ্রীমঙ্গলের প্রিমিয়াম কোয়ালিটি চা</p>
-        <p style="margin-top: 10px;">Hotline: 01836-476892 | 01521-739472</p>
-        <p style="margin-top: 20px; font-size: 0.9rem;">&copy; 2026 Cha-Bilashi. All rights reserved.</p>
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="hero-media">
+                <img src="assets/img/hero.jpg" alt="ভোরের সোনালি আলোয় শ্রীমঙ্গলের সবুজ চা-বাগান" fetchpriority="high">
+            </div>
+            <div class="hero-overlay" aria-hidden="true"></div>
+
+            <div class="container hero-content">
+                <span class="eyebrow">শ্রীমঙ্গল • বাংলাদেশের চা-রাজধানী</span>
+                <h1 class="hero-title">চা-বিলাসী<span class="accent">।</span><br>কাপে কাপে শ্রীমঙ্গল</h1>
+                <p class="hero-sub">পাহাড়ের সকালের শিশির থেকে আপনার কাপ পর্যন্ত — শ্রীমঙ্গলের এস্টেট থেকে সরাসরি সংগৃহীত, হাতে বাছাই করা প্রিমিয়াম কোয়ালিটির খাঁটি চা।</p>
+                <div class="hero-actions">
+                    <a class="btn btn-wa" href="https://wa.me/8801521739472?text=%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%8B,%20%E0%A6%86%E0%A6%AE%E0%A6%BF%20%E0%A6%9A%E0%A6%BE-%E0%A6%AC%E0%A6%BF%E0%A6%B2%E0%A6%BE%E0%A6%B8%E0%A7%80%20%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87%20%E0%A6%9A%E0%A6%BE%20%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%A1%E0%A6%BE%E0%A6%B0%20%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp-এ অর্ডার করুন
+                    </a>
+                    <a class="btn btn-ghost" href="#products">
+                        <i class="fa-solid fa-mug-hot" aria-hidden="true"></i> পণ্য দেখুন
+                    </a>
+                </div>
+                <ul class="hero-badges">
+                    <li><i class="fa-solid fa-leaf" aria-hidden="true"></i> ১০০% খাঁটি ও প্রাকৃতিক</li>
+                    <li><i class="fa-solid fa-mountain-sun" aria-hidden="true"></i> সরাসরি টি-এস্টেট থেকে</li>
+                    <li><i class="fa-solid fa-truck-fast" aria-hidden="true"></i> সারাদেশে ডেলিভারি</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features" id="features" aria-label="কেন চা-বিলাসী">
+            <div class="container">
+                <div class="features-grid">
+                    <article class="feature-card reveal">
+                        <div class="feature-icon"><i class="fa-solid fa-mountain-sun" aria-hidden="true"></i></div>
+                        <h3>এস্টেট থেকে সরাসরি</h3>
+                        <p>শ্রীমঙ্গলের নামকরা টি-এস্টেট থেকে বাছাই করা পাতা — কোনো মধ্যস্বত্বভোগী ছাড়াই পৌঁছে যায় আপনার হাতে।</p>
+                    </article>
+                    <article class="feature-card reveal" style="--d:.08s">
+                        <div class="feature-icon"><i class="fa-solid fa-seedling" aria-hidden="true"></i></div>
+                        <h3>১০০% প্রাকৃতিক</h3>
+                        <p>কোনো কৃত্রিম রং, ফ্লেভার বা প্রিজারভেটিভ নেই — শুধু খাঁটি চা-পাতা আর আস্ত মসলার সৎ স্বাদ।</p>
+                    </article>
+                    <article class="feature-card reveal" style="--d:.16s">
+                        <div class="feature-icon"><i class="fa-solid fa-box-open" aria-hidden="true"></i></div>
+                        <h3>যত্নের প্যাকেজিং</h3>
+                        <p>ঘ্রাণ ও সতেজতা অক্ষুণ্ণ রাখতে ফুড-গ্রেড, এয়ারটাইট প্যাকে — খোলার instant-এ বাগানের গন্ধ।</p>
+                    </article>
+                    <article class="feature-card reveal" style="--d:.24s">
+                        <div class="feature-icon"><i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i></div>
+                        <h3>সহজ অর্ডার ও সেবা</h3>
+                        <p>WhatsApp-এ এক ক্লিকে অর্ডার, যত্নে প্যাক করে সারাদেশে কুরিয়ার ডেলিভারি — সবসময় পাশে আমরা।</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section class="products" id="products">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">আমাদের সংগ্রহ</span>
+                    <h2 class="section-title">সিগনেচার টি কালেকশন</h2>
+                    <p class="section-lead">প্রতিটি ব্লেন্ড তৈরি হয় ছোট ব্যাচে, যত্নে — যাতে প্রতিটি কাপে ফুটে ওঠে শ্রীমঙ্গলের মাটি, রোদ আর শিশিরের গল্প।</p>
+                </div>
+
+                <div class="product-grid">
+                    <article class="product-card reveal">
+                        <div class="product-media">
+                            <span class="product-tag">বেস্ট সেলার</span>
+                            <img src="assets/img/black-tea.jpg" alt="প্রিমিয়াম ব্ল্যাক টি — প্যাকেট ও কাপে ঢালা চা" width="800" height="640" loading="lazy">
+                        </div>
+                        <div class="product-body">
+                            <h3>প্রিমিয়াম ব্ল্যাক টি <span class="en">Premium Black Tea</span></h3>
+                            <p class="product-note">ঘন আম্বার রং আর মল্ট-সমৃদ্ধ ক্লাসিক স্বাদ। দুধ-চা হোক বা হালকা লিকার — দুটোতেই দুর্দান্ত।</p>
+                            <div class="product-meta">
+                                <span class="weight"><i class="fa-solid fa-weight-hanging" aria-hidden="true"></i>৫০০ গ্রাম</span>
+                                <span class="price">৳ ৩৫০</span>
+                            </div>
+                            <a class="btn btn-wa btn-block" href="https://wa.me/8801521739472?text=%E0%A6%86%E0%A6%AE%E0%A6%BF%20Premium%20Black%20Tea%20%28%E0%A7%AB%E0%A7%A6%E0%A7%A6%20%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%29%20%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%A1%E0%A6%BE%E0%A6%B0%20%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87" target="_blank" rel="noopener">
+                                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> অর্ডার করুন
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal" style="--d:.1s">
+                        <div class="product-media">
+                            <span class="product-tag">অর্গানিক</span>
+                            <img src="assets/img/green-tea.jpg" alt="অর্গানিক গ্রিন টি — ক্রাফট প্যাকেট ও কাপে হালকা সবুজ চা" width="800" height="640" loading="lazy">
+                        </div>
+                        <div class="product-body">
+                            <h3>অর্গানিক গ্রিন টি <span class="en">Organic Green Tea</span></h3>
+                            <p class="product-note">হালকা, সতেজ আর নরম ফ্লোরাল নোট। দিনের যেকোনো সময়ের হেলদি সঙ্গী — অ্যান্টিঅক্সিডেন্টে ভরপুর।</p>
+                            <div class="product-meta">
+                                <span class="weight"><i class="fa-solid fa-weight-hanging" aria-hidden="true"></i>৫০০ গ্রাম</span>
+                                <span class="price">৳ ৪৫০</span>
+                            </div>
+                            <a class="btn btn-wa btn-block" href="https://wa.me/8801521739472?text=%E0%A6%86%E0%A6%AE%E0%A6%BF%20Organic%20Green%20Tea%20%28%E0%A7%AB%E0%A7%A6%E0%A7%A6%20%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%29%20%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%A1%E0%A6%BE%E0%A6%B0%20%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87" target="_blank" rel="noopener">
+                                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> অর্ডার করুন
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="product-card reveal" style="--d:.2s">
+                        <div class="product-media">
+                            <span class="product-tag">সিগনেচার ব্লেন্ড</span>
+                            <img src="assets/img/masala-tea.jpg" alt="স্পেশাল মাসালা চাই — মসলাসহ দুধ-চা" width="800" height="640" loading="lazy">
+                        </div>
+                        <div class="product-body">
+                            <h3>স্পেশাল মাসালা চাই <span class="en">Special Masala Chai</span></h3>
+                            <p class="product-note">দারুচিনি, এলাচ আর লবঙের ঘ্রাণে ভরা ঘরোয়া ব্লেন্ড। বৃষ্টিভেজা বিকেল কিংবা শীতের সন্ধ্যার পারফেক্ট সঙ্গী।</p>
+                            <div class="product-meta">
+                                <span class="weight"><i class="fa-solid fa-weight-hanging" aria-hidden="true"></i>৫০০ গ্রাম</span>
+                                <span class="price">৳ ৪০০</span>
+                            </div>
+                            <a class="btn btn-wa btn-block" href="https://wa.me/8801521739472?text=%E0%A6%86%E0%A6%AE%E0%A6%BF%20Special%20Masala%20Chai%20%28%E0%A7%AB%E0%A7%A6%E0%A7%A6%20%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%29%20%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%A1%E0%A6%BE%E0%A6%B0%20%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87" target="_blank" rel="noopener">
+                                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> অর্ডার করুন
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about" id="about">
+            <div class="container about-grid">
+                <div class="about-media reveal">
+                    <img src="assets/img/about.jpg" alt="চা-বাগানে হাতে চা-পাতা তোলা হচ্ছে" width="800" height="920" loading="lazy">
+                    <div class="about-badge">
+                        <strong>১০০%</strong>
+                        <span>খাঁটি ও প্রাকৃতিক</span>
+                    </div>
+                </div>
+                <div class="about-copy reveal" style="--d:.1s">
+                    <span class="eyebrow">আমাদের গল্প</span>
+                    <h2 class="section-title">শ্রীমঙ্গলের পাহাড় থেকে, ভালোবাসার সঙ্গে</h2>
+                    <p>বাংলাদেশের চা-রাজধানী শ্রীমঙ্গলের সবুজ পাহাড়ে চা-বিলাসীর যাত্রা। ভোরের নরম আলোয় হাতে তোলা টেন্ডার পাতা — ‘টু লিভস অ্যান্ড আ বাড’ — ছোট ব্যাচে যত্নে প্রসেস করে সরাসরি পৌঁছে দিই আপনার হাতে।</p>
+                    <p>আমাদের বিশ্বাস, ভালো চা মানে শুধু পানীয় নয় — এটি একটি অনুভব। তাই বাগান থেকে কাপ পর্যন্ত প্রতিটি ধাপে আমরা রাখি অক্লান্ত যত্ন আর অসম্ভব ভালোবাসা।</p>
+                    <ul class="checklist">
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> ভোরবেলা হাতে বাছাই করা টেন্ডার পাতা</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> ছোট ব্যাচে প্রসেসিং — স্বাদ ও ঘ্রাণে আপসহীন</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> বাগান থেকে সরাসরি, তাই দামেও সাশ্রয়ী</li>
+                    </ul>
+                    <p class="signature">— চা-বিলাসী পরিবার, শ্রীমঙ্গল</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brewing guide -->
+        <section class="guide" id="guide">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">ব্রুয়িং গাইড</span>
+                    <h2 class="section-title">পারফেক্ট কাপের ৪ ধাপ</h2>
+                    <p class="section-lead">সঠিক নিয়মে ব্রু করলে প্রতিটি ব্লেন্ডের স্বাদ ফুটে ওঠে দ্বিগুণ। আমাদের চার সহজ ধাপ অনুসরণ করুন।</p>
+                </div>
+                <ol class="steps">
+                    <li class="step reveal">
+                        <span class="step-num" aria-hidden="true">১</span>
+                        <i class="fa-solid fa-droplet step-icon" aria-hidden="true"></i>
+                        <h3>তাজা পানি ফুটান</h3>
+                        <p>ব্ল্যাক ও মাসালা টি-তে ৯৫–১০০° সে., গ্রিন টি-তে ৮০–৮৫° সে. পানি ব্যবহার করুন।</p>
+                    </li>
+                    <li class="step reveal" style="--d:.08s">
+                        <span class="step-num" aria-hidden="true">২</span>
+                        <i class="fa-solid fa-spoon step-icon" aria-hidden="true"></i>
+                        <h3>সঠিক পরিমাণ</h3>
+                        <p>প্রতি কাপে ১ চা-চামচ (প্রায় ২.৫ গ্রাম) চা-পাতা নিন — বেশি নয়, কমও নয়।</p>
+                    </li>
+                    <li class="step reveal" style="--d:.16s">
+                        <span class="step-num" aria-hidden="true">৩</span>
+                        <i class="fa-solid fa-hourglass-half step-icon" aria-hidden="true"></i>
+                        <h3>ঢেকে রাখুন</h3>
+                        <p>ব্ল্যাক ও মাসালা টি ৩–৫ মিনিট, গ্রিন টি ২–৩ মিনিট — ঘ্রাণ ধরে রাখতে ঢাকনা দিন।</p>
+                    </li>
+                    <li class="step reveal" style="--d:.24s">
+                        <span class="step-num" aria-hidden="true">৪</span>
+                        <i class="fa-solid fa-mug-hot step-icon" aria-hidden="true"></i>
+                        <h3>উপভোগ করুন</h3>
+                        <p>ছেঁকে নিন; স্বাদমতো দুধ, লেবু বা মধু যোগ করে উপভোগ করুন নিখাদ বিলাস।</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">সাধারণ জিজ্ঞাসা</span>
+                    <h2 class="section-title">আপনার প্রশ্ন, আমাদের উত্তর</h2>
+                </div>
+                <div class="faq-list reveal">
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">অর্ডার করব কীভাবে? <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                        <div class="faq-a"><div class="faq-a-inner"><p>যেকোনো পণ্যের “অর্ডার করুন” বাটনে ক্লিক করলেই সরাসরি WhatsApp-এ মেসেজ চলে যাবে — নাম, ঠিকানা লিখে পাঠিয়ে দিন। চাইলে হটলাইনে কল করেও অর্ডার করতে পারেন।</p></div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">ডেলিভারি চার্জ ও সময় কেমন? <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                        <div class="faq-a"><div class="faq-a-inner"><p>আমরা সারাদেশে কুরিয়ারে ডেলিভারি পাঠাই। আপনার লোকেশনভেদে চার্জ ও সময় অর্ডার কনফার্মেশনের সময় WhatsApp-এ জানিয়ে দেওয়া হয়।</p></div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">চা সংরক্ষণ করব কীভাবে? <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                        <div class="faq-a"><div class="faq-a-inner"><p>প্যাক খোলার পর চা-পাতা বাতাসরোধী (এয়ারটাইট) পাত্রে রাখুন; সরাসরি রোদ, তাপ ও আর্দ্রতা থেকে দূরে রাখলে ঘ্রাণ ও স্বাদ দীর্ঘদিন অক্ষুণ্ণ থাকবে।</p></div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">পাইকারি বা বাল্ক অর্ডার করা যায়? <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                        <div class="faq-a"><div class="faq-a-inner"><p>হ্যাঁ! অফিস, রেস্টুরেন্ট কিংবা উপহার/কর্পোরেট প্যাকের জন্য বাল্ক অর্ডার নিই। পরিমাণ ও বিশেষ প্যাকেজিং নিয়ে আলোচনার জন্য হটলাইনে যোগাযোগ করুন।</p></div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">পেমেন্ট কীভাবে করব? <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                        <div class="faq-a"><div class="faq-a-inner"><p>ডেলিভারির সময় ক্যাশ-সহ সহজ পেমেন্ট অপশন রয়েছে। অর্ডার কনফার্মেশনের সময় WhatsApp-এ বিস্তারিত জানিয়ে দেওয়া হয়।</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA banner -->
+        <section class="cta-banner" aria-label="অর্ডার করুন">
+            <div class="container cta-inner">
+                <div>
+                    <h2>আজই আপনার কাপে <span class="accent">শ্রীমঙ্গল</span></h2>
+                    <p>এক ক্লিকে অর্ডার — বাকিটা আমাদের দায়িত্ব। তাজা পাতা, যত্নের প্যাকেজ, সময়মতো ডেলিভারি।</p>
+                </div>
+                <div class="cta-actions">
+                    <a class="btn btn-wa" href="https://wa.me/8801521739472?text=%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%8B,%20%E0%A6%86%E0%A6%AE%E0%A6%BF%20%E0%A6%9A%E0%A6%BE-%E0%A6%AC%E0%A6%BF%E0%A6%B2%E0%A6%BE%E0%A6%B8%E0%A7%80%20%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87%20%E0%A6%9A%E0%A6%BE%20%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%A1%E0%A6%BE%E0%A6%B0%20%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp-এ অর্ডার
+                    </a>
+                    <a class="btn btn-gold" href="tel:+8801836476892">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i> 01836-476892
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">যোগাযোগ</span>
+                    <h2 class="section-title">আমরা আছি আপনার পাশে</h2>
+                    <p class="section-lead">অর্ডার, পরামর্শ কিংবা সহযোগিতা — যেকোনো প্রয়োজনে নির্দ্বিধায় যোগাযোগ করুন।</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-card reveal">
+                        <div class="contact-icon"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i></div>
+                        <h3>হটলাইন</h3>
+                        <a class="line" href="tel:+8801836476892">01836-476892</a>
+                        <a class="line" href="tel:+8801521739472">01521-739472</a>
+                        <p>সরাসরি কল করে অর্ডার ও তথ্য নিন</p>
+                    </div>
+                    <div class="contact-card reveal" style="--d:.08s">
+                        <div class="contact-icon"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></div>
+                        <h3>WhatsApp</h3>
+                        <a class="line" href="https://wa.me/8801521739472" target="_blank" rel="noopener">+880 1521-739472</a>
+                        <p>যেকোনো সময় মেসেজ দিন — দ্রুত উত্তর পাবেন</p>
+                    </div>
+                    <div class="contact-card reveal" style="--d:.16s">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+                        <h3>ঠিকানা</h3>
+                        <p>শ্রীমঙ্গল, মৌলভীবাজার<br>সিলেট বিভাগ, বাংলাদেশ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="brand" aria-label="চা-বিলাসী — হোম">
+                        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                            <rect width="64" height="64" rx="15" fill="#1a3a28"/>
+                            <circle cx="32" cy="32" r="23" fill="none" stroke="#c9a227" stroke-width="1.6" opacity="0.55"/>
+                            <path d="M32 14c7.6 6.4 11.6 13.2 11.6 20.2C43.6 42.6 38.4 48 32 48s-11.6-5.4-11.6-13.8C20.4 27.2 24.4 20.4 32 14z" fill="#c9a227"/>
+                            <path d="M32 18v26" stroke="#1a3a28" stroke-width="1.8" stroke-linecap="round"/>
+                            <path d="M32 26c2.6-1.8 5-2.4 7.4-2.2M32 33c-2.6-1.8-5-2.4-7.4-2.2M32 40c2.6-1.8 5-2.4 7.4-2.2" stroke="#1a3a28" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+                        </svg>
+                        <span class="brand-text">
+                            <span class="brand-name">চা-বিলাসী</span>
+                            <span class="brand-tag">Sreemangal Tea</span>
+                        </span>
+                    </a>
+                    <p>শ্রীমঙ্গলের টি-এস্টেট থেকে সরাসরি আপনার কাপে — প্রিমিয়াম কোয়ালিটির খাঁটি চা।</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/8801521739472" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                        <a href="tel:+8801836476892" aria-label="কল করুন"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+                        <a href="#contact" aria-label="ঠিকানা দেখুন"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>দ্রুত লিংক</h4>
+                    <ul class="footer-links">
+                        <li><a href="#products">আমাদের চা</a></li>
+                        <li><a href="#about">আমাদের গল্প</a></li>
+                        <li><a href="#guide">ব্রুয়িং গাইড</a></li>
+                        <li><a href="#faq">সাধারণ জিজ্ঞাসা</a></li>
+                        <li><a href="#contact">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>যোগাযোগ</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-phone" aria-hidden="true"></i><span><a href="tel:+8801836476892">01836-476892</a><br><a href="tel:+8801521739472">01521-739472</a></span></li>
+                        <li><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span><a href="https://wa.me/8801521739472" target="_blank" rel="noopener">+880 1521-739472</a></span></li>
+                        <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>শ্রীমঙ্গল, মৌলভীবাজার,<br>সিলেট বিভাগ, বাংলাদেশ</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> চা-বিলাসী। সর্বস্বত্ব সংরক্ষিত।</span>
+                <span>শ্রীমঙ্গল, বাংলাদেশ থেকে <span class="heart">♥</span> দিয়ে তৈরি</span>
+            </div>
+        </div>
     </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/8801521739472?text=হ্যালো,%20আমি%20আপনাদের%20চা%20সম্পর্কে%20জানতে%20চাই" target="_blank" class="float-wa">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- Floating actions -->
+    <div class="fab-stack">
+        <button class="fab fab-top" aria-label="উপরে ফিরে যান"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+        <a class="fab fab-wa" href="https://wa.me/8801521739472?text=%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%8B,%20%E0%A6%86%E0%A6%AE%E0%A6%BF%20%E0%A6%86%E0%A6%AA%E0%A6%A8%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0%20%E0%A6%9A%E0%A6%BE%20%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A7%87%20%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87" target="_blank" rel="noopener" aria-label="WhatsApp-এ মেসেজ দিন"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+    </div>
 
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
